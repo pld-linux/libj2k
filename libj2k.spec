@@ -2,7 +2,7 @@ Summary:	J2000 library
 Summary(pl):	Biblioteka J2000
 Name:		libj2k
 Version:	0.0.9
-Release:	0.1
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/gaim-vv/%{name}-%{version}.tar.gz
