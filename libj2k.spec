@@ -1,5 +1,5 @@
-Summary:	Some kind of lib
-Summary(pl):	Siaka? biblioteka
+Summary:	J2000 library
+Summary(pl):	Biblioteka J2000
 Name:		libj2k
 Version:	0.0.8
 Release:	0.1
@@ -14,39 +14,37 @@ BuildRequires:  libtool >= 1:1.4.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Blahblahblah
+J2000 library.
 
 %description -l pl
-blablabla
+Biblioteka J2000.
 
 %package devel
-Summary:	The GNU oSIP library - development files
-Summary(pl):	Pliki dla programistów u¿ywaj±cych GNU oSIP
+Summary:	The J2000 library - development files
+Summary(pl):	Pliki dla programistów u¿ywaj±cych J2000
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Development files for the GNU oSIP library.
+Development files for the J2000 library.
 
 %description devel -l pl
-Pliki dla programistów u¿ywaj±cych biblioteki GNU oSIP.
+Pliki dla programistów u¿ywaj±cych biblioteki J2000.
 
 %package static
-Summary:	The GNU oSIP library - static version
-Summary(pl):	Statyczna biblioteka GNU oSIP
+Summary:	The J2000 library - static version
+Summary(pl):	Statyczna biblioteka J2000
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
-Static version of the GNU oSIP library.
+Static version of the J2000 library.
 
 %description static -l pl
-Statyczna wersja biblioteki GNU oSIP.
+Statyczna wersja biblioteki J2000.
 
 %prep
 %setup -q
-
-rm -f acinclude.m4
 
 %build
 %{__libtoolize}
@@ -63,7 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -79,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
-%{_includedir}/*
+%{_includedir}/*.h
 
 %files static
 %defattr(644,root,root,755)
