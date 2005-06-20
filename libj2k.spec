@@ -7,7 +7,7 @@ License:	LGPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/gaim-vv/%{name}-%{version}.tar.gz
 # Source0-md5:	8daf9fd215fe00eb1c9c6af1b0aa61ee
-URL:		http://gaim-vv.sf.net/
+URL:		http://gaim-vv.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool >= 1:1.4.3
