@@ -1,5 +1,5 @@
 Summary:	J2000 library
-Summary(pl):	Biblioteka J2000
+Summary(pl.UTF-8):   Biblioteka J2000
 Name:		libj2k
 Version:	0.0.9
 Release:	1
@@ -16,31 +16,31 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 J2000 library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka J2000.
 
 %package devel
 Summary:	The J2000 library - development files
-Summary(pl):	Pliki dla programistów u¿ywaj±cych J2000
+Summary(pl.UTF-8):   Pliki dla programistÃ³w uÅ¼ywajÄ…cych J2000
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Development files for the J2000 library.
 
-%description devel -l pl
-Pliki dla programistów u¿ywaj±cych biblioteki J2000.
+%description devel -l pl.UTF-8
+Pliki dla programistÃ³w uÅ¼ywajÄ…cych biblioteki J2000.
 
 %package static
 Summary:	The J2000 library - static version
-Summary(pl):	Statyczna biblioteka J2000
+Summary(pl.UTF-8):   Statyczna biblioteka J2000
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of the J2000 library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki J2000.
 
 %prep
