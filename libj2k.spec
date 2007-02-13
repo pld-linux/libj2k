@@ -1,5 +1,5 @@
 Summary:	J2000 library
-Summary(pl.UTF-8):   Biblioteka J2000
+Summary(pl.UTF-8):	Biblioteka J2000
 Name:		libj2k
 Version:	0.0.9
 Release:	1
@@ -21,7 +21,7 @@ Biblioteka J2000.
 
 %package devel
 Summary:	The J2000 library - development files
-Summary(pl.UTF-8):   Pliki dla programistów używających J2000
+Summary(pl.UTF-8):	Pliki dla programistów używających J2000
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -33,7 +33,7 @@ Pliki dla programistów używających biblioteki J2000.
 
 %package static
 Summary:	The J2000 library - static version
-Summary(pl.UTF-8):   Statyczna biblioteka J2000
+Summary(pl.UTF-8):	Statyczna biblioteka J2000
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
